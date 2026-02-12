@@ -1,9 +1,9 @@
 # PiStake –  Staking Platform
 
-PiStake is a front-end staking dashboard built for educational and presentation purposes.
+PiStake is a front-end staking dashboard built for staking purposes.
 
 ⚠ DISCLAIMER:
-This is a only. It does connect to the Pi Network blockchain.
+This is a pi staking platform nly. It connects to the Pi Network blockchain.
 No real staking, wallet interaction, or financial transactions occur on this platform.
 
 ---
