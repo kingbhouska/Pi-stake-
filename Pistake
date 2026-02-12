@@ -1,0 +1,78 @@
+index.html<!DOCTYPE html>
+<html>
+<head>
+  <title>Pi Staking Dashboard (Demo)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 15px;
+      width: 400px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      color: #fbbf24;
+    }
+
+    .demo-warning {
+      background: red;
+      padding: 10px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .value {
+      font-size: 24px;
+      margin: 15px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #fbbf24;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="demo-warning">
+  ⚠ DEMO PLATFORM ONLY – NO REAL STAKING
+</div>
+
+<div class="card">
+  <h1>Pi Staking Dashboard</h1>
+
+  <div class="value">Account: Kingsley (Demo)</div>
+  <div class="value">Staked Amount: 1,060 PI</div>
+  <div class="value">APR: 12%</div>
+  <div class="value">Estimated Profit: <span id="profit">0.00</span> PI</div>
+
+  <button onclick="simulateProfit()">Simulate Profit</button>
+</div>
+
+<script>
+  let profit = 0;
+
+  function simulateProfit() {
+    setInterval(() => {
+      profit += 0.02; // simulated growth
+      document.getElementById("profit").innerText = profit.toFixed(2);
+    }, 1000);
+  }
+</script>
+
+</body>
+</html>
