@@ -1,4 +1,4 @@
-# PiStake – Demo Staking Platform
+# PiStake –  Staking Platform
 
 PiStake is a front-end staking dashboard built for educational and presentation purposes.
 
